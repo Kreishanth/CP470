@@ -8,4 +8,13 @@
     <string name="radio_button">BoutonRadio</string>
     <string name="checkbox">CaseÀCocher</string>
     <string name="what_switch">Qu\'est-ce que cela fait?</string>
+    <string name="login_button">Identifier</string>
+    <string name="default_email">default email</string>
+    <string name="switch_on">Commutateur est Activé</string>
+    <string name="switch_off">Commutateur est Désactivé</string>
+    <string name="dialog_message">Voulez-vous terminer cette activité?</string>
+    <string name="dialog_title">Confirmer L\'action</string>
+    <string name="dialog_ok">Confirme</string>
+    <string name="dialog_cancel">Annule</string>
+    <string name="response_message">Voici ma réponse</string>
 </resources>

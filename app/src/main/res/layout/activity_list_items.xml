@@ -25,13 +25,14 @@
         android:id="@+id/what_switch"
         android:text="@string/what_switch"
         android:layout_columnWeight="1"
-        android:layout_gravity="fill"/>
+        android:layout_gravity="fill" />
 
     <ImageButton
         android:id="@+id/image_button"
         android:layout_columnWeight="1"
         android:layout_gravity="fill"
         android:src="@android:drawable/ic_menu_camera"
-        tools:src="@android:drawable/ic_menu_camera" />
+        tools:src="@android:drawable/ic_menu_camera"
+        android:onClick="launchCam"/>
 
 </GridLayout>
