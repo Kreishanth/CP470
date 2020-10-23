@@ -16,4 +16,7 @@
     <string name="dialog_ok">Confirm</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="response_message">Here\'s my response</string>
+    <string name="ChatButtonText">Start Chat</string>
+    <string name="SendButtonText">Send</string>
+    <string name="default_hint">Enter Text</string>
 </resources>

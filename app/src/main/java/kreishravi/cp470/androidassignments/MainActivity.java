@@ -67,4 +67,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void startChat(View view) {
+        Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+        startActivity(intent);
+    }
 }
