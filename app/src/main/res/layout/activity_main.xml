@@ -20,21 +20,23 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
+        app:layout_constraintVertical_bias="0.171" />
 
     <Button
         android:id="@+id/main_button"
         android:layout_width="122dp"
         android:layout_height="78dp"
         android:background="#673AB7"
+        android:onClick="startActivityForResult"
         android:text="@string/ButtonText"
         android:textColor="#FFEB3B"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="startActivityForResult"/>
+        app:layout_constraintVertical_bias="0.301" />
 
     <Button
         android:id="@+id/chat_button"
@@ -47,9 +49,25 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_button"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/toolbar_button"
+        android:layout_width="122dp"
+        android:layout_height="78dp"
+        android:background="#673AB7"
+        android:onClick="startToolbar"
+        android:text="@string/ToolBarButtonText"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_button"
+        app:layout_constraintVertical_bias="0.365" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

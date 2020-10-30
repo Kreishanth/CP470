@@ -20,4 +20,12 @@
     <string name="ChatButtonText">Commence la Discussion</string>
     <string name="SendButtonText">Envoyer</string>
     <string name="default_hint">Entrer du Texte</string>
+    <string name="title_activity_test_toolbar">Barre d\'Outils</string>
+    <string name="ToolBarButtonText">Commence La Barre d\'Outils</string>
+    <string name="OptionOne">Option 1</string>
+    <string name="OptionTwo">Option 2</string>
+    <string name="OptionThree">Option 3</string>
+    <string name="OptionFour">À Propos</string>
+    <string name="FloatButtonMsg">Bouton Flottant Cliqué</string>
+    <string name="Option1Msg">Vous avez s\'électionné l\'élément 1</string>
 </resources>
