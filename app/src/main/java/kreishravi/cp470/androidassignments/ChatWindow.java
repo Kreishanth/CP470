@@ -48,15 +48,16 @@ public class ChatWindow extends AppCompatActivity {
         Cursor cursor = database.query(true, dbHelper.TABLE_NAME, null, null, null, null, null, null, null);
         cursor.moveToFirst();
 
+        Log.i(ACTIVITY_NAME, "Cursor\'s Column Count = " + cursor.getColumnCount());
+        for (int i = 0; i < cursor.getColumnCount(); i++) {
+            Log.i(ACTIVITY_NAME, "Column #" + (i+1) + " = " + cursor.getColumnName(i));
+        }
+
         while(!cursor.isAfterLast()) {
             String cursor_message = cursor.getString(cursor.getColumnIndex(dbHelper.KEY_MESSAGE));
-            Log.i(ACTIVITY_NAME, "SQL MESSAGE:" + cursor_message);
+            String cursor_id = cursor.getString(cursor.getColumnIndex(dbHelper.KEY_ID));
+            Log.i(ACTIVITY_NAME, "SQL MESSAGE AT ID " + cursor_id + ": " + cursor_message);
             messages.add(cursor_message);
-            Log.i(ACTIVITY_NAME, "Cursor\'s column count=" + cursor.getColumnCount());
-
-            for (int i = 0; i < cursor.getColumnCount(); i++) {
-                Log.i(ACTIVITY_NAME, "Column #" + i + "=" + cursor.getColumnName(i));
-            }
             cursor.moveToNext();
         }
 
@@ -81,7 +82,7 @@ public class ChatWindow extends AppCompatActivity {
         Cursor cursor = database.query(dbHelper.TABLE_NAME, null, dbHelper.KEY_ID + "=" + insertId, null, null, null, null, null);
         cursor.moveToFirst();
         String cursor_message = cursor.getString(cursor.getColumnIndex(dbHelper.KEY_MESSAGE));
-        Log.i(ACTIVITY_NAME, "SQL MESSAGE AT ID " + insertId + "="+ cursor_message);
+        Log.i(ACTIVITY_NAME, "SQL MESSAGE INSERTED AT ID " + insertId + " = "+ cursor_message);
         cursor.close();
     }
 
