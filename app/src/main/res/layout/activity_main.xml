@@ -33,10 +33,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301" />
+        app:layout_constraintVertical_bias="0.304" />
 
     <Button
         android:id="@+id/chat_button"
@@ -49,10 +49,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
 
     <Button
         android:id="@+id/toolbar_button"
@@ -65,9 +65,25 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_button"
-        app:layout_constraintVertical_bias="0.365" />
+        app:layout_constraintVertical_bias="0.177" />
+
+    <Button
+        android:id="@+id/weather_button"
+        android:layout_width="122dp"
+        android:layout_height="78dp"
+        android:background="#673AB7"
+        android:onClick="startWeather"
+        android:text="@string/WeatherButtonText"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_button"
+        app:layout_constraintVertical_bias="0.177" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,6 +27,17 @@
     <string name="OptionFour">About</string>
     <string name="FloatButtonMsg">Floating Button Clicked</string>
     <string name="Option1Msg">You selected item 1</string>
+    <string name="WeatherButtonText">Open Weather Forecast</string>
+    <string-array name="cities">
+        <item>-- Select an Option --</item>
+        <item>Ottawa</item>
+        <item>Mississauga</item>
+        <item>Toronto</item>
+        <item>Waterloo</item>
+        <item>Guelph</item>
+        <item>Vancouver</item>
+        <item>Fredericton</item>
+    </string-array>
 
 
     <!-- Strings used for fragments for navigation -->
